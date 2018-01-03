@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.7.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="SIG60">
+<wire x1="0" y1="0" x2="0" y2="-6" width="0.127" layer="21"/>
+<wire x1="0" y1="-6" x2="6" y2="-6" width="0.127" layer="21"/>
+<wire x1="6" y1="-6" x2="6" y2="0" width="0.127" layer="21"/>
+<wire x1="6" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<smd name="INTERFHOP" x="0.1" y="-1.05" dx="0.6096" dy="0.3048" layer="16"/>
+<smd name="GND" x="0.1" y="-1.7" dx="0.6096" dy="0.3048" layer="16" roundness="100"/>
+<smd name="TXO" x="0.1" y="-2.35" dx="0.6096" dy="0.3048" layer="16" roundness="100"/>
+<smd name="RXN" x="0.1" y="-3" dx="0.6096" dy="0.3048" layer="16" roundness="100"/>
+<smd name="RXIN" x="0.1" y="-3.65" dx="0.6096" dy="0.3048" layer="16" roundness="100"/>
+<smd name="VDD" x="0.1" y="-4.3" dx="0.6096" dy="0.3048" layer="16" roundness="100"/>
+<smd name="TEST" x="0.1" y="-4.95" dx="0.6096" dy="0.3048" layer="16" roundness="100"/>
+<smd name="RXON" x="1.05" y="-5.9" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R90"/>
+<smd name="TXON" x="1.7" y="-5.9" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R90"/>
+<smd name="MF1NF0" x="2.35" y="-5.9" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R90"/>
+<smd name="WAKE" x="3" y="-5.9" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R90"/>
+<smd name="NRESET" x="3.65" y="-5.9" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R90"/>
+<smd name="NSLEEP" x="4.3" y="-5.9" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R90"/>
+<smd name="INH" x="4.95" y="-5.9" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R90"/>
+<smd name="HDO" x="5.9" y="-4.95" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R180"/>
+<smd name="F1NFO" x="5.9" y="-4.3" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R180"/>
+<smd name="HDC" x="5.9" y="-3.65" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R180"/>
+<smd name="HDI" x="5.9" y="-3" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R180"/>
+<smd name="VDD@19" x="5.9" y="-2.35" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R180"/>
+<smd name="DTXO" x="5.9" y="-1.7" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R180"/>
+<smd name="GND@21" x="5.9" y="-1.05" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R180"/>
+<smd name="OSCO" x="4.95" y="-0.1" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R270"/>
+<smd name="OSCIN" x="4.3" y="-0.1" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R270"/>
+<smd name="AGND" x="3.65" y="-0.1" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R270"/>
+<smd name="F1B" x="3" y="-0.1" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R270"/>
+<smd name="F0B" x="2.35" y="-0.1" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R270"/>
+<smd name="AVDD" x="1.7" y="-0.1" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R270"/>
+<smd name="RXP" x="1.05" y="-0.1" dx="0.6096" dy="0.3048" layer="16" roundness="100" rot="R270"/>
+<text x="1.4" y="-1.75" size="0.6096" layer="25">&gt;NAME</text>
+<text x="1.35" y="-4.15" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SIG60">
+<pin name="INTERFHOP" x="-58.42" y="15.24" length="middle"/>
+<pin name="GND" x="-58.42" y="10.16" length="middle"/>
+<pin name="TXO" x="-58.42" y="5.08" length="middle"/>
+<pin name="RXN" x="-58.42" y="0" length="middle"/>
+<pin name="RXLN" x="-58.42" y="-5.08" length="middle"/>
+<pin name="VDD" x="-58.42" y="-10.16" length="middle"/>
+<pin name="TEST" x="-58.42" y="-15.24" length="middle"/>
+<pin name="RXON" x="-48.26" y="-25.4" length="middle" rot="R90"/>
+<pin name="TXON" x="-43.18" y="-25.4" length="middle" rot="R90"/>
+<pin name="MF1FN0" x="-38.1" y="-25.4" length="middle" rot="R90"/>
+<pin name="WAKE" x="-33.02" y="-25.4" length="middle" rot="R90"/>
+<pin name="NRESET" x="-27.94" y="-25.4" length="middle" rot="R90"/>
+<pin name="NSLEEP" x="-22.86" y="-25.4" length="middle" rot="R90"/>
+<pin name="INH" x="-17.78" y="-25.4" length="middle" rot="R90"/>
+<pin name="HDO" x="-7.62" y="-15.24" length="middle" rot="R180"/>
+<pin name="F1FNO" x="-7.62" y="-10.16" length="middle" rot="R180"/>
+<pin name="HDC" x="-7.62" y="-5.08" length="middle" rot="R180"/>
+<pin name="HDI" x="-7.62" y="0" length="middle" rot="R180"/>
+<pin name="VDD@19" x="-7.62" y="5.08" length="middle" rot="R180"/>
+<pin name="DTXO" x="-7.62" y="10.16" length="middle" rot="R180"/>
+<pin name="GND@21" x="-7.62" y="15.24" length="middle" rot="R180"/>
+<pin name="OSCO" x="-17.78" y="25.4" length="middle" rot="R270"/>
+<pin name="OSCIN" x="-22.86" y="25.4" length="middle" rot="R270"/>
+<pin name="AGND" x="-27.94" y="25.4" length="middle" rot="R270"/>
+<pin name="F1B" x="-33.02" y="25.4" length="middle" rot="R270"/>
+<pin name="F0B" x="-38.1" y="25.4" length="middle" rot="R270"/>
+<pin name="AVDD" x="-43.18" y="25.4" length="middle" rot="R270"/>
+<pin name="RXP" x="-48.26" y="25.4" length="middle" rot="R270"/>
+<wire x1="-53.34" y1="20.32" x2="-53.34" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-53.34" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="20.32" x2="-53.34" y2="20.32" width="0.254" layer="94"/>
+<text x="-43.18" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-43.18" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SIG60" prefix="SIG">
+<gates>
+<gate name="G$1" symbol="SIG60" x="53.34" y="-20.32"/>
+</gates>
+<devices>
+<device name="" package="SIG60">
+<connects>
+<connect gate="G$1" pin="AGND" pad="AGND"/>
+<connect gate="G$1" pin="AVDD" pad="AVDD"/>
+<connect gate="G$1" pin="DTXO" pad="DTXO"/>
+<connect gate="G$1" pin="F0B" pad="F0B"/>
+<connect gate="G$1" pin="F1B" pad="F1B"/>
+<connect gate="G$1" pin="F1FNO" pad="F1NFO"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND@21" pad="GND@21"/>
+<connect gate="G$1" pin="HDC" pad="HDC"/>
+<connect gate="G$1" pin="HDI" pad="HDI"/>
+<connect gate="G$1" pin="HDO" pad="HDO"/>
+<connect gate="G$1" pin="INH" pad="INH"/>
+<connect gate="G$1" pin="INTERFHOP" pad="INTERFHOP"/>
+<connect gate="G$1" pin="MF1FN0" pad="MF1NF0"/>
+<connect gate="G$1" pin="NRESET" pad="NRESET"/>
+<connect gate="G$1" pin="NSLEEP" pad="NSLEEP"/>
+<connect gate="G$1" pin="OSCIN" pad="OSCIN"/>
+<connect gate="G$1" pin="OSCO" pad="OSCO"/>
+<connect gate="G$1" pin="RXLN" pad="RXIN"/>
+<connect gate="G$1" pin="RXN" pad="RXN"/>
+<connect gate="G$1" pin="RXON" pad="RXON"/>
+<connect gate="G$1" pin="RXP" pad="RXP"/>
+<connect gate="G$1" pin="TEST" pad="TEST"/>
+<connect gate="G$1" pin="TXO" pad="TXO"/>
+<connect gate="G$1" pin="TXON" pad="TXON"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VDD@19" pad="VDD@19"/>
+<connect gate="G$1" pin="WAKE" pad="WAKE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
