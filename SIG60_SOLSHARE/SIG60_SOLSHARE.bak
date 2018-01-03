@@ -290,45 +290,45 @@ VGRID
 $Comp
 L NCP1117DT12G_MountingTab U2
 U 1 1 5A3B7C5E
-P 7550 4950
-F 0 "U2" H 7400 4650 50  0000 C CNN
-F 1 "NCP1117DT12G_MountingTab" H 7300 5100 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-3Lead" H 7600 4700 50  0001 L CNN
-F 3 "" H 7550 4950 50  0001 C CNN
-	1    7550 4950
+P 5750 6950
+F 0 "U2" H 5600 6650 50  0000 C CNN
+F 1 "NCP1117DT12G_MountingTab" H 5500 7100 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-3Lead" H 5800 6700 50  0001 L CNN
+F 3 "" H 5750 6950 50  0001 C CNN
+	1    5750 6950
 	-1   0    0    -1  
 $EndComp
 $Comp
 L C C2
 U 1 1 5A3B8EE1
-P 7250 5350
-F 0 "C2" H 7275 5450 50  0000 L CNN
-F 1 "10uF" H 7275 5250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7288 5200 50  0001 C CNN
-F 3 "" H 7250 5350 50  0001 C CNN
-	1    7250 5350
+P 5450 7350
+F 0 "C2" H 5475 7450 50  0000 L CNN
+F 1 "10uF" H 5475 7250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5488 7200 50  0001 C CNN
+F 3 "" H 5450 7350 50  0001 C CNN
+	1    5450 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C6
 U 1 1 5A3B9A80
-P 7850 5350
-F 0 "C6" H 7875 5450 50  0000 L CNN
-F 1 "1uF" H 7875 5250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7888 5200 50  0001 C CNN
-F 3 "" H 7850 5350 50  0001 C CNN
-	1    7850 5350
+P 6050 7350
+F 0 "C6" H 6075 7450 50  0000 L CNN
+F 1 "1uF" H 6075 7250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6088 7200 50  0001 C CNN
+F 3 "" H 6050 7350 50  0001 C CNN
+	1    6050 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R9
 U 1 1 5A3B9EC7
-P 8100 4950
-F 0 "R9" V 8180 4950 50  0000 C CNN
-F 1 "39" V 8100 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 8030 4950 50  0001 C CNN
-F 3 "" H 8100 4950 50  0001 C CNN
-	1    8100 4950
+P 6300 6950
+F 0 "R9" V 6380 6950 50  0000 C CNN
+F 1 "39" V 6300 6950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6230 6950 50  0001 C CNN
+F 3 "" H 6300 6950 50  0001 C CNN
+	1    6300 6950
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -357,7 +357,7 @@ Text Label 1250 1000 1    60   ~ 0
 SS_HDI
 Text Label 1750 1800 1    60   ~ 0
 HDI
-Text Label 8300 4600 1    60   ~ 0
+Text Label 6500 6600 1    60   ~ 0
 5V
 $Comp
 L R R14
@@ -402,7 +402,7 @@ NoConn ~ 7600 3450
 NoConn ~ 7800 3450
 NoConn ~ 8100 3450
 NoConn ~ 7000 2350
-Text Notes 7050 4450 0    60   ~ 0
+Text Notes 5250 6450 0    60   ~ 0
 PLC_Power_Supply
 Text Notes 550  600  0    60   ~ 0
 LVL_Shifter_TX
@@ -755,8 +755,8 @@ Wire Wire Line
 	8600 2750 10050 2750
 Wire Wire Line
 	8600 2950 10050 2950
-Connection ~ 7250 4950
-Connection ~ 7250 5050
+Connection ~ 5450 6950
+Connection ~ 5450 7050
 Wire Notes Line
 	550  6350 4350 6350
 Wire Notes Line
@@ -797,9 +797,9 @@ Wire Notes Line
 Wire Notes Line
 	500  1900 650  1900
 Wire Wire Line
-	8250 4950 8300 4950
+	6450 6950 6500 6950
 Wire Wire Line
-	8300 4950 8300 4600
+	6500 6950 6500 6600
 Wire Wire Line
 	2200 1400 2350 1400
 Wire Wire Line
@@ -932,22 +932,22 @@ Connection ~ 4500 4300
 Connection ~ 4100 4000
 Connection ~ 4500 4000
 Wire Notes Line
-	7000 4350 8450 4350
+	5200 6350 6650 6350
 Wire Notes Line
-	7000 4350 7000 5750
+	5200 6350 5200 7750
 Wire Notes Line
-	7000 5750 8450 5750
+	5200 7750 6650 7750
 Wire Notes Line
-	8450 5750 8450 4350
-Text Label 7250 5500 3    60   ~ 0
+	6650 7750 6650 6350
+Text Label 5450 7500 3    60   ~ 0
 GND
-Text Label 7850 5500 3    60   ~ 0
+Text Label 6050 7500 3    60   ~ 0
 GND
-Text Label 7550 5500 3    60   ~ 0
+Text Label 5750 7500 3    60   ~ 0
 GND
 Wire Wire Line
-	7550 5250 7550 5500
-Text Label 7250 4700 1    60   ~ 0
+	5750 7250 5750 7500
+Text Label 5450 6700 1    60   ~ 0
 3.3V
 Text Label 3250 800  1    60   ~ 0
 3.3V
@@ -1029,8 +1029,6 @@ Text Label 3150 3950 0    60   ~ 0
 PLC_SLEEP
 Wire Notes Line
 	4400 6350 4400 7500
-Wire Notes Line
-	6950 7500 6950 6350
 Text Notes 4450 6450 0    60   ~ 0
 Flashing
 Text Notes 600  3500 0    60   ~ 0
@@ -1045,7 +1043,7 @@ Wire Notes Line
 	11200 4300 11200 500 
 NoConn ~ 1800 7150
 Wire Wire Line
-	7250 4700 7250 5200
+	5450 6700 5450 7200
 $Comp
 L CONN_01X05 J1
 U 1 1 5A409C21
@@ -1178,14 +1176,6 @@ F 3 "" H 4350 5400 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	4950 6300 550  6300
-Wire Notes Line
-	5000 4350 5000 6300
-Wire Notes Line
-	5000 6300 6950 6300
-Wire Notes Line
-	6950 6300 6950 4350
-Wire Notes Line
-	6950 4350 5000 4350
 Text Label 4350 6250 0    60   ~ 0
 GND
 $Comp
@@ -1467,11 +1457,11 @@ Connection ~ 8600 2850
 NoConn ~ 6600 2250
 NoConn ~ 5800 2250
 Wire Wire Line
-	7950 4950 7850 4950
+	6150 6950 6050 6950
 Wire Wire Line
-	7850 4950 7850 5200
+	6050 6950 6050 7200
 NoConn ~ 7700 1850
-Connection ~ 7850 4950
+Connection ~ 6050 6950
 Connection ~ 1150 5850
 Wire Wire Line
 	1050 5850 1250 5850
