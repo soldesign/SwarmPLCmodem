@@ -110,7 +110,7 @@ F 1 "4 MHz" H 8200 1450 50  0000 C CNN
 F 2 "Crystals:Crystal_AT310_d3.0mm_l10.0mm_Horizontal" H 8200 1600 50  0001 C CNN
 F 3 "" H 8200 1600 50  0001 C CNN
 	1    8200 1600
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R5
@@ -280,59 +280,13 @@ F 3 "" H 2000 2850 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text Label 10050 2950 0    60   ~ 0
-HDO
+SS_HDO
 Text Label 10050 2750 0    60   ~ 0
-HDC
+PLC_CMD
 Text Label 10050 2650 0    60   ~ 0
-HDI
+SS_HDI
 Text Label 850  3950 2    60   ~ 0
 VGRID
-$Comp
-L NCP1117DT12G_MountingTab U2
-U 1 1 5A3B7C5E
-P 1850 5250
-F 0 "U2" H 1700 4950 50  0000 C CNN
-F 1 "NCP1117DT12G_MountingTab" H 1600 5400 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-3Lead" H 1900 5000 50  0001 L CNN
-F 3 "" H 1850 5250 50  0001 C CNN
-	1    1850 5250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L C C2
-U 1 1 5A3B8EE1
-P 1550 5650
-F 0 "C2" H 1575 5750 50  0000 L CNN
-F 1 "10uF" H 1575 5550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 1588 5500 50  0001 C CNN
-F 3 "" H 1550 5650 50  0001 C CNN
-	1    1550 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C6
-U 1 1 5A3B9A80
-P 2150 5650
-F 0 "C6" H 2175 5750 50  0000 L CNN
-F 1 "1uF" H 2175 5550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2188 5500 50  0001 C CNN
-F 3 "" H 2150 5650 50  0001 C CNN
-	1    2150 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R9
-U 1 1 5A3B9EC7
-P 2400 5250
-F 0 "R9" V 2480 5250 50  0000 C CNN
-F 1 "39" V 2400 5250 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 2330 5250 50  0001 C CNN
-F 3 "" H 2400 5250 50  0001 C CNN
-	1    2400 5250
-	0    1    -1   0   
-$EndComp
-Text Label 2600 4900 1    60   ~ 0
-5V
 Text Label 2250 3850 0    60   ~ 0
 3.3V
 $Comp
@@ -350,8 +304,6 @@ NoConn ~ 7600 3450
 NoConn ~ 7800 3450
 NoConn ~ 8100 3450
 NoConn ~ 7000 2350
-Text Notes 1350 4750 0    60   ~ 0
-PLC_Power_Supply
 Text Notes 5050 600  0    60   ~ 0
 PLC_Yamar_SIG60
 Text Notes 550  3550 0    60   ~ 0
@@ -418,11 +370,11 @@ uC_TX
 Text Label 850  5200 2    60   ~ 0
 uC_RX
 Text Label 850  5300 2    60   ~ 0
-5V
+3.3V
 Text Label 850  5500 2    60   ~ 0
 GND
 Text Label 650  750  2    60   ~ 0
-5V
+3.3V
 Text Label 3100 2750 0    60   ~ 0
 SS_RX
 $Comp
@@ -491,7 +443,7 @@ F 3 "" H 4450 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 4600 2350 0    60   ~ 0
-5V
+3.3V
 Text Label 4300 2300 2    60   ~ 0
 uC_RST
 Text Label 3100 2200 0    60   ~ 0
@@ -634,18 +586,12 @@ Wire Wire Line
 	8600 2750 10050 2750
 Wire Wire Line
 	8600 2950 10050 2950
-Connection ~ 1550 5250
-Connection ~ 1550 5350
 Wire Notes Line
 	500  3450 4300 3450
 Wire Notes Line
 	500  3450 500  4600
 Wire Notes Line
 	500  4600 4300 4600
-Wire Wire Line
-	2550 5250 2600 5250
-Wire Wire Line
-	2600 5250 2600 4900
 Wire Wire Line
 	8300 900  8300 950 
 Wire Wire Line
@@ -712,24 +658,6 @@ Connection ~ 4450 1400
 Connection ~ 4050 1100
 Connection ~ 4450 1100
 Wire Notes Line
-	1300 4650 2750 4650
-Wire Notes Line
-	1300 4650 1300 6050
-Wire Notes Line
-	1300 6050 2750 6050
-Wire Notes Line
-	2750 6050 2750 4650
-Text Label 1550 5800 3    60   ~ 0
-GND
-Text Label 2150 5800 3    60   ~ 0
-GND
-Text Label 1850 5800 3    60   ~ 0
-GND
-Wire Wire Line
-	1850 5550 1850 5800
-Text Label 1550 5000 1    60   ~ 0
-3.3V
-Wire Notes Line
 	500  500  4900 500 
 Wire Notes Line
 	500  500  500  3400
@@ -750,8 +678,6 @@ SS_HDO
 Wire Notes Line
 	11200 4300 11200 500 
 NoConn ~ 1750 4250
-Wire Wire Line
-	1550 5000 1550 5500
 $Comp
 L CONN_01X05 J1
 U 1 1 5A409C21
@@ -823,9 +749,9 @@ GND
 Text Label 1000 3150 3    60   ~ 0
 GND
 Text Label 1200 1050 2    60   ~ 0
-5V
+3.3V
 Text Label 950  1350 2    60   ~ 0
-5V
+3.3V
 Wire Wire Line
 	1200 1350 950  1350
 $Comp
@@ -909,9 +835,9 @@ GND
 Wire Notes Line
 	4300 4600 4300 3450
 Text Label 3100 3950 2    60   ~ 0
-SOL_RX
+SS_RX
 Text Label 3100 4050 2    60   ~ 0
-SOL_TX
+SS_TX
 NoConn ~ 1750 3850
 Connection ~ 4300 2350
 Wire Wire Line
@@ -974,8 +900,6 @@ Wire Wire Line
 	7900 3650 7900 3450
 NoConn ~ 1200 2100
 NoConn ~ 1200 2200
-NoConn ~ 3100 1350
-NoConn ~ 3100 1450
 NoConn ~ 3100 1150
 NoConn ~ 3100 1250
 NoConn ~ 3100 1600
@@ -992,12 +916,7 @@ GND
 Connection ~ 8600 2850
 NoConn ~ 6600 2250
 NoConn ~ 5800 2250
-Wire Wire Line
-	2250 5250 2150 5250
-Wire Wire Line
-	2150 5250 2150 5500
 NoConn ~ 7700 1850
-Connection ~ 2150 5250
 Connection ~ 1100 2950
 Wire Wire Line
 	1000 2950 1200 2950
@@ -1044,4 +963,8 @@ Wire Notes Line
 	1250 4650 500  4650
 Wire Notes Line
 	500  5800 1250 5800
+Text Label 3100 1450 0    60   ~ 0
+XTAL2
+Text Label 3100 1350 0    60   ~ 0
+XTAL1
 $EndSCHEMATC
