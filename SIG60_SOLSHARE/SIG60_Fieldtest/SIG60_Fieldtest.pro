@@ -1,4 +1,4 @@
-update=21/12/2017 12:42:46
+update=23/01/2018 17:44:07
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,6 @@ LibName29=valves
 LibName30=C:/Users/J/Documents/MicroEnergyProjects/KaranaBase/02 Hardware/KaranaBaseUno/KiCad libraries/arduinouno
 LibName31=arduino_lib-master/arduino_lib-master/arduino
 LibName32=C:/Users/J/Dropbox/Master_Arbeit/Network/Experiment/SIG60/SIG60_SOLSHARE/PLC_Yamar
+LibName33=SIG60_Fieldtest-cache
+LibName34=C:/Users/J/Dropbox/Master_Arbeit/Network/Experiment/SIG60/SIG60_SOLSHARE/SIG60_SOLSHARE-cache
+LibName35=C:/Users/J/Dropbox/Master_Arbeit/Network/Experiment/OneWireNano/OneWireNano/OneWireNano-cache

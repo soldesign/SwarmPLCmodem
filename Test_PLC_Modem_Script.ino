@@ -11,17 +11,17 @@ SoftwareSerial ssolbox (3,2);   //define softare serial for com with solbox(RX-s
 
 void setup() {  
   // put your setup code here, to run once:
-  //Serial.begin(19200);
-  snap.begin(19200);            //initialize snap
-  snap.addDevice(84);           //add associated address
-  pinMode(buttonPin, INPUT);    //define pin for send button
-  portOne.begin(19200);         //initialize software serial
-  portOne.println("Setup Done");
+  snap.begin(19200);            // initialize snap
+  snap.addDevice(84);           // add associated address
+  pinMode(buttonPin, INPUT);    // define pin mode for send trigger button as INPUT
+  pinMode(pinhdc, OUTPUT);      // define pin mode for command mode as OUTPUT 
+  pinMode(pinsleep, OUTPUT);    // define pin mode for sleep mode as OUTPUT
+  //portOne.begin(19200);         //initialize software serial
+  //portOne.println("Setup Done");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  //Serial.println("ready for sending");
+  // put your main code here, to run repeatedly:  
   buttonState = digitalRead(buttonPin);                     //read button pin
   if (buttonState == HIGH) {                                //if button is pressed send message
     int k=0;                                                //initialize k for maximum packet size detection

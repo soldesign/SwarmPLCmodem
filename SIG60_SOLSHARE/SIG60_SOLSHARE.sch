@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SIG60_SOLSHARE-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -280,11 +281,11 @@ F 3 "" H 2000 2850 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text Label 10050 4350 0    60   ~ 0
-SS_HDO
+PLC_HDO
 Text Label 10050 4150 0    60   ~ 0
 PLC_CMD
 Text Label 10050 4050 0    60   ~ 0
-SS_HDI
+PLC_HDI
 Text Label 850  3950 2    60   ~ 0
 VGRID
 Text Label 2250 3850 0    60   ~ 0
@@ -374,7 +375,7 @@ Text Label 850  5500 2    60   ~ 0
 GND
 Text Label 650  750  2    60   ~ 0
 3.3V
-Text Label 3100 2750 0    60   ~ 0
+Text Label 3100 2550 0    60   ~ 0
 SS_RX
 $Comp
 L R R16
@@ -449,18 +450,18 @@ Text Label 3100 2200 0    60   ~ 0
 uC_RST
 Text Label 3100 2650 0    60   ~ 0
 SS_TX
-Text Label 3100 950  0    60   ~ 0
+Text Label 3100 2950 0    60   ~ 0
 PLC_CMD
-Text Label 3100 1050 0    60   ~ 0
+Text Label 3100 850  0    60   ~ 0
 PLC_SLEEP
 Text Notes 550  4750 0    60   ~ 0
 Flashing
 Text Notes 550  600  0    60   ~ 0
 Atmega328p
+Text Label 3100 2850 0    60   ~ 0
+PLC_HDI
 Text Label 3100 750  0    60   ~ 0
-SS_HDI
-Text Label 3100 850  0    60   ~ 0
-SS_HDO
+PLC_HDO
 NoConn ~ 1750 4250
 $Comp
 L CONN_01X05 J1
@@ -500,11 +501,9 @@ Text Label 8700 3550 1    60   ~ 0
 GND
 Text Label 6650 5050 2    60   ~ 0
 GND
-Text Label 6900 4450 3    60   ~ 0
+Text Label 7100 4450 3    60   ~ 0
 GND
-Text Label 6900 4450 3    60   ~ 0
-GND
-Text Label 6650 4450 3    60   ~ 0
+Text Label 6650 4300 3    60   ~ 0
 3.3V
 Text Label 5500 3950 2    60   ~ 0
 VGRID
@@ -651,16 +650,12 @@ Text Label 7900 5050 3    60   ~ 0
 nReset
 NoConn ~ 1200 2100
 NoConn ~ 1200 2200
-NoConn ~ 3100 1150
-NoConn ~ 3100 1250
 NoConn ~ 3100 1600
 NoConn ~ 3100 1700
 NoConn ~ 3100 1800
 NoConn ~ 3100 1900
 NoConn ~ 3100 2000
 NoConn ~ 3100 2100
-NoConn ~ 3100 2950
-NoConn ~ 3100 3050
 Text Label 2250 3950 0    60   ~ 0
 GND
 NoConn ~ 6600 3650
@@ -678,7 +673,6 @@ F 5 "1.78" H 2100 1850 60  0001 C CNN "Price"
 	1    2100 1850
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3100 2550
 Text Label 3100 1450 0    60   ~ 0
 XTAL2
 Text Label 3100 1350 0    60   ~ 0
@@ -701,13 +695,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 4150 6400 3950
 Wire Wire Line
-	6900 4450 6900 4350
-Wire Wire Line
-	6900 4350 7000 4350
-Wire Wire Line
 	7000 4250 6650 4250
-Wire Wire Line
-	6650 4250 6650 4450
 Wire Wire Line
 	7000 3850 6950 3850
 Wire Wire Line
@@ -736,7 +724,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 2700 6850 2700
 Wire Wire Line
-	6850 2700 6850 3100
+	6850 2400 6850 3100
 Wire Wire Line
 	7300 2300 7300 2500
 Wire Wire Line
@@ -959,10 +947,10 @@ Wire Notes Line
 Wire Notes Line
 	11200 500  11200 1950
 $Comp
-L Crystal_GND2 Y?
+L Crystal_GND2 Y3
 U 1 1 5A53BB90
 P 7300 1500
-F 0 "Y?" H 7300 1725 50  0000 C CNN
+F 0 "Y3" H 7300 1725 50  0000 C CNN
 F 1 "ceramic filter" H 7300 1650 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7300 1500 50  0001 C CNN
 F 3 "" H 7300 1500 50  0001 C CNN
@@ -970,10 +958,10 @@ F 3 "" H 7300 1500 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L R R?
+L R R6
 U 1 1 5A53BED2
 P 7550 1250
-F 0 "R?" H 7650 1400 50  0000 C CNN
+F 0 "R6" H 7650 1400 50  0000 C CNN
 F 1 "1k" V 7550 1250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 7480 1250 50  0001 C CNN
 F 3 "" H 7550 1250 50  0001 C CNN
@@ -981,10 +969,10 @@ F 3 "" H 7550 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C?
+L C C2
 U 1 1 5A53C01F
 P 7750 1500
-F 0 "C?" V 7700 1350 50  0000 L CNN
+F 0 "C2" V 7700 1350 50  0000 L CNN
 F 1 "1nF" V 7700 1550 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7788 1350 50  0001 C CNN
 F 3 "" H 7750 1500 50  0001 C CNN
@@ -1005,16 +993,16 @@ Connection ~ 7550 1500
 Wire Wire Line
 	7150 1500 7100 1500
 Wire Wire Line
-	8900 1950 7100 1950
+	7100 1950 9550 1950
 Connection ~ 7100 1950
 Text Label 7300 1100 1    60   ~ 0
 GND
 Wire Wire Line
 	7300 1100 7300 1300
-Text Label 3100 2850 0    60   ~ 0
-InterfHop
+Text Label 3100 2750 0    60   ~ 0
+PLC_InterfHop
 Text Label 7050 3600 1    60   ~ 0
-InterfHop
+PLC_InterfHop
 Wire Wire Line
 	7000 3750 7000 3700
 Wire Wire Line
@@ -1040,10 +1028,10 @@ Wire Wire Line
 Wire Wire Line
 	7800 4950 7800 4850
 $Comp
-L CONN_01X02 J?
+L CONN_01X02 J6
 U 1 1 5A545354
 P 6900 1800
-F 0 "J?" H 6900 1950 50  0000 C CNN
+F 0 "J6" H 6900 1950 50  0000 C CNN
 F 1 "CONN_01X02" V 7000 1800 50  0000 C CNN
 F 2 "" H 6900 1800 50  0001 C CNN
 F 3 "" H 6900 1800 50  0001 C CNN
@@ -1054,4 +1042,118 @@ Wire Wire Line
 	7100 1500 7100 1750
 Wire Wire Line
 	7100 1850 7100 2700
+$Comp
+L CONN_02X04 J5
+U 1 1 5A5DA394
+P 5850 1150
+F 0 "J5" H 5850 1400 50  0000 C CNN
+F 1 "CONN_02X04" H 5850 900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 5850 -50 50  0001 C CNN
+F 3 "" H 5850 -50 50  0001 C CNN
+	1    5850 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4250 6650 4300
+Text Label 6200 4750 2    60   ~ 0
+BO_TXO
+Text Label 6200 4650 2    60   ~ 0
+BO_RxN
+Text Label 6200 4550 2    60   ~ 0
+BO_RxIn
+Wire Wire Line
+	6850 4150 6850 4550
+Wire Wire Line
+	6850 4550 6200 4550
+Wire Wire Line
+	6900 4050 6900 4650
+Wire Wire Line
+	6900 4650 6200 4650
+Connection ~ 6900 4050
+Wire Wire Line
+	6950 3950 6950 4750
+Wire Wire Line
+	6950 4750 6200 4750
+Connection ~ 6950 3950
+Wire Wire Line
+	7000 4350 7000 4400
+Wire Wire Line
+	7000 4400 7100 4400
+Wire Wire Line
+	7100 4400 7100 4450
+Text Label 9550 1950 0    60   ~ 0
+BO_DTxO
+Connection ~ 8900 1950
+Text Label 9600 2700 0    60   ~ 0
+BO_F1B
+Wire Wire Line
+	7800 2700 9600 2700
+Text Label 9600 2500 0    60   ~ 0
+BO_F0B
+Wire Wire Line
+	8100 2500 9600 2500
+Connection ~ 8100 2500
+Text Label 6850 2400 2    60   ~ 0
+BO_RxP
+Connection ~ 6850 2700
+Text Label 5500 1300 2    60   ~ 0
+BO_RxP
+Text Label 6250 1000 0    60   ~ 0
+BO_DTxO
+Text Label 6250 1100 0    60   ~ 0
+BO_F0B
+Text Label 6250 1200 0    60   ~ 0
+BO_F1B
+Text Label 5500 1000 2    60   ~ 0
+BO_RxIn
+Text Label 5500 1100 2    60   ~ 0
+BO_RxN
+Text Label 5500 1200 2    60   ~ 0
+BO_TXO
+Text Label 3100 1150 0    60   ~ 0
+PLC_MF0F1
+Text Label 3100 1250 0    60   ~ 0
+PLC_INH
+Text Label 3100 3050 0    60   ~ 0
+PLC_F1nF0
+Text Label 3100 950  0    60   ~ 0
+PLC_nReset
+Text Label 3100 1050 0    60   ~ 0
+PLC_Wake
+Wire Notes Line
+	1300 4650 4300 4650
+Wire Notes Line
+	4300 4650 4300 7700
+Wire Notes Line
+	4300 7700 1300 7700
+Wire Notes Line
+	1300 7700 1300 4650
+Text Notes 1350 4750 0    60   ~ 0
+UNO Shield
+Text Label 3900 5550 0    60   ~ 0
+GND
+Text Label 1650 6200 2    60   ~ 0
+GND
+Wire Wire Line
+	2000 6150 1900 6150
+Wire Wire Line
+	1900 6150 1900 6250
+Wire Wire Line
+	1900 6200 1650 6200
+Wire Wire Line
+	1900 6250 2000 6250
+Connection ~ 1900 6200
+Wire Wire Line
+	3550 5550 3900 5550
+$Comp
+L ArduinoUno AU1
+U 1 1 5A70AF30
+P 2850 4650
+F 0 "AU1" H 3550 4800 60  0000 C CNN
+F 1 "ArduinoUno" H 4300 4600 60  0000 C CNN
+F 2 "Arduinos:ARDUINO SHIELD" H 2850 4650 60  0001 C CNN
+F 3 "" H 2850 4650 60  0001 C CNN
+	1    2850 4650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
