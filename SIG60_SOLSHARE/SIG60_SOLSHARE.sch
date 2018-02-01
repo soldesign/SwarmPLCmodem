@@ -955,12 +955,12 @@ NoConn ~ 4200 5450
 $Comp
 L R R?
 U 1 1 5A71B747
-P 2450 5850
-F 0 "R?" V 2550 5850 50  0000 C CNN
-F 1 "0" V 2450 5850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2380 5850 50  0001 C CNN
-F 3 "" H 2450 5850 50  0001 C CNN
-	1    2450 5850
+P 2450 5650
+F 0 "R?" V 2500 5800 50  0000 C CNN
+F 1 "0" V 2450 5650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2380 5650 50  0001 C CNN
+F 3 "" H 2450 5650 50  0001 C CNN
+	1    2450 5650
 	0    1    -1   0   
 $EndComp
 Text Label 2300 5950 2    60   ~ 0
@@ -1327,8 +1327,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 5950 2300 5950
 Wire Wire Line
-	2650 5850 2600 5850
-Wire Wire Line
 	2650 6550 2600 6550
 Wire Wire Line
 	2650 6650 2600 6650
@@ -1499,4 +1497,52 @@ Wire Wire Line
 	6100 1100 6250 1100
 Wire Wire Line
 	6100 1200 6250 1200
+NoConn ~ 2650 6050
+$Comp
+L R R?
+U 1 1 5A73A764
+P 2450 6350
+F 0 "R?" V 2500 6500 50  0000 C CNN
+F 1 "0" V 2450 6350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2380 6350 50  0001 C CNN
+F 3 "" H 2450 6350 50  0001 C CNN
+	1    2450 6350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2650 6350 2600 6350
+Text Label 2300 6350 2    60   ~ 0
+VGRID
+Wire Notes Line
+	5000 5750 5000 7700
+Wire Notes Line
+	5000 7700 6900 7700
+Wire Notes Line
+	6900 7700 6900 5750
+Wire Notes Line
+	6900 5750 5000 5750
+Text Notes 5050 5850 0    60   ~ 0
+LVL Shifter
+$Comp
+L R R?
+U 1 1 5A744B76
+P 2450 5550
+F 0 "R?" V 2500 5700 50  0000 C CNN
+F 1 "0" V 2450 5550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2380 5550 50  0001 C CNN
+F 3 "" H 2450 5550 50  0001 C CNN
+	1    2450 5550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2650 5850 2650 5550
+Wire Wire Line
+	2650 5550 2600 5550
+Wire Wire Line
+	2600 5650 2650 5650
+Connection ~ 2650 5650
+Text Label 2300 5650 2    60   ~ 0
+nReset
+Text Label 2300 5550 2    60   ~ 0
+uC_RST
 $EndSCHEMATC
