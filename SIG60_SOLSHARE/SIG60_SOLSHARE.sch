@@ -112,6 +112,8 @@ F 2 "Crystals:Crystal_AT310_d3.0mm_l10.0mm_Horizontal" H 8850 2900 50  0001 C CN
 F 3 "" H 8850 2900 50  0001 C CNN
 F 4 "https://www.mouser.de/ProductDetail/Epson-Timing/CA-301-40000M-CPBFREE?qs=sGAEpiMZZMsBj6bBr9Q9aUVpZ9f5Pp%252bsAJFsUQQjiHY%3d" H 8850 2900 60  0001 C CNN "Mouser"
 F 5 "1.30" H 8850 2900 60  0001 C CNN "Price"
+F 6 "https://www.mouser.de/ProductDetail/ECS/ECS-40-18-10X?qs=sGAEpiMZZMsBj6bBr9Q9aZy59saLb3yqxvdbck0DN7Q%3d" H 8850 2900 60  0001 C CNN "Mouser2"
+F 7 "0.6" H 8850 2900 60  0001 C CNN "Price"
 	1    8850 2900
 	-1   0    0    1   
 $EndComp
@@ -187,8 +189,10 @@ U 1 1 5A3AC3B4
 P 7950 2600
 F 0 "Y2" H 7950 2825 50  0000 C CNN
 F 1 "ceramic filter" H 7950 2750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7950 2600 50  0001 C CNN
+F 2 "Crystals:Resonator-3pin_w6.0mm_h3.0mm" H 7950 2600 50  0001 C CNN
 F 3 "" H 7950 2600 50  0001 C CNN
+F 4 "https://www.mouser.de/ProductDetail/Murata-Electronics/CSTLS6M50G53-B0?qs=%2fha2pyFaduiAB1VbLhMF21TL4peOYkYl6B9EV%252b%252bLTuc%3d" H 7950 2600 60  0001 C CNN "Mouser"
+F 5 "0.2" H 7950 2600 60  0001 C CNN "Price"
 	1    7950 2600
 	1    0    0    1   
 $EndComp
@@ -274,12 +278,12 @@ Connector_SOLBox
 $Comp
 L CONN_01X06 J3
 U 1 1 5A3D4685
-P 3000 5150
-F 0 "J3" H 3000 5500 50  0000 C CNN
-F 1 "CONN_01X06" V 3100 5150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 3000 5150 50  0001 C CNN
-F 3 "" H 3000 5150 50  0001 C CNN
-	1    3000 5150
+P 3150 5150
+F 0 "J3" H 3150 5500 50  0000 C CNN
+F 1 "CONN_01X06" V 3250 5150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 3150 5150 50  0001 C CNN
+F 3 "" H 3150 5150 50  0001 C CNN
+	1    3150 5150
 	1    0    0    -1  
 $EndComp
 Text Label 3100 2350 0    60   ~ 0
@@ -326,14 +330,14 @@ Text Label 3650 2950 0    60   ~ 0
 D6
 Text Label 3650 3050 0    60   ~ 0
 D7
-NoConn ~ 2800 5300
-Text Label 2800 5000 2    60   ~ 0
+NoConn ~ 2950 5300
+Text Label 2950 5000 2    60   ~ 0
 uC_TX
-Text Label 2800 5100 2    60   ~ 0
+Text Label 2950 5100 2    60   ~ 0
 uC_RX
-Text Label 2800 5200 2    60   ~ 0
+Text Label 2950 5200 2    60   ~ 0
 3.3V
-Text Label 2800 5400 2    60   ~ 0
+Text Label 2950 5400 2    60   ~ 0
 GND
 Text Label 650  750  2    60   ~ 0
 3.3V
@@ -416,7 +420,7 @@ Text Label 3100 2850 0    60   ~ 0
 PLC_CMD
 Text Label 3100 2650 0    60   ~ 0
 PLC_SLEEP
-Text Notes 1800 4650 0    60   ~ 0
+Text Notes 2150 4650 0    60   ~ 0
 Flashing
 Text Notes 550  600  0    60   ~ 0
 Atmega328p
@@ -460,8 +464,6 @@ Text Label 1000 3150 3    60   ~ 0
 GND
 Text Label 1000 3150 3    60   ~ 0
 GND
-Text Label 1200 1050 2    60   ~ 0
-3.3V
 Text Label 950  1350 2    60   ~ 0
 3.3V
 $Comp
@@ -573,7 +575,7 @@ U 1 1 5A53BB90
 P 7950 1400
 F 0 "Y3" H 7950 1625 50  0000 C CNN
 F 1 "ceramic filter" H 7950 1550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7950 1400 50  0001 C CNN
+F 2 "Crystals:Resonator-3pin_w6.0mm_h3.0mm" H 7950 1400 50  0001 C CNN
 F 3 "" H 7950 1400 50  0001 C CNN
 	1    7950 1400
 	1    0    0    1   
@@ -611,12 +613,12 @@ PLC_InterfHop
 $Comp
 L CONN_02X04 J5
 U 1 1 5A5DA394
-P 6650 1200
-F 0 "J5" H 6650 1450 50  0000 C CNN
-F 1 "CONN_02X04" H 6650 950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 6650 0   50  0001 C CNN
-F 3 "" H 6650 0   50  0001 C CNN
-	1    6650 1200
+P 2900 3950
+F 0 "J5" H 2900 4200 50  0000 C CNN
+F 1 "CONN_02X04" H 2900 3700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 2900 2750 50  0001 C CNN
+F 3 "" H 2900 2750 50  0001 C CNN
+	1    2900 3950
 	1    0    0    -1  
 $EndComp
 Text Label 6850 4650 2    60   ~ 0
@@ -633,19 +635,19 @@ Text Label 10250 2400 0    60   ~ 0
 BO_F0B
 Text Label 7500 2300 2    60   ~ 0
 BO_RxP
-Text Label 6300 1350 2    60   ~ 0
+Text Label 2550 4100 2    60   ~ 0
 BO_RxP
-Text Label 7050 1050 0    60   ~ 0
+Text Label 3300 3800 0    60   ~ 0
 BO_DTxO
-Text Label 7050 1150 0    60   ~ 0
+Text Label 3300 3900 0    60   ~ 0
 BO_F0B
-Text Label 7050 1250 0    60   ~ 0
+Text Label 3300 4000 0    60   ~ 0
 BO_F1B
-Text Label 6300 1050 2    60   ~ 0
+Text Label 2550 3800 2    60   ~ 0
 BO_RxIn
-Text Label 6300 1150 2    60   ~ 0
+Text Label 2550 3900 2    60   ~ 0
 BO_RxN
-Text Label 6300 1250 2    60   ~ 0
+Text Label 2550 4000 2    60   ~ 0
 BO_TXO
 Text Label 3100 1150 0    60   ~ 0
 PLC_MF0F1
@@ -889,15 +891,15 @@ $EndComp
 $Comp
 L C C6
 U 1 1 5A720714
-P 2450 4800
-F 0 "C6" V 2300 4800 50  0000 L CNN
-F 1 "0.1uF" V 2600 4650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2488 4650 50  0001 C CNN
-F 3 "" H 2450 4800 50  0001 C CNN
-	1    2450 4800
+P 2600 4800
+F 0 "C6" V 2450 4800 50  0000 L CNN
+F 1 "0.1uF" V 2750 4650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2638 4650 50  0001 C CNN
+F 3 "" H 2600 4800 50  0001 C CNN
+	1    2600 4800
 	0    1    1    0   
 $EndComp
-Text Label 2150 4800 2    60   ~ 0
+Text Label 2450 4800 2    60   ~ 0
 uC_RST
 Text Label 900  7150 2    60   ~ 0
 A0
@@ -1181,7 +1183,7 @@ Wire Notes Line
 Wire Notes Line
 	500  500  500  3400
 Wire Notes Line
-	1750 4550 1750 5700
+	2100 4550 2100 5700
 Wire Notes Line
 	4900 500  4900 3400
 Wire Wire Line
@@ -1227,7 +1229,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 850  1100 850 
 Wire Wire Line
-	1100 850  1100 750 
+	1100 750  1100 1050
 Wire Wire Line
 	650  750  1200 750 
 Connection ~ 1100 750 
@@ -1236,9 +1238,9 @@ Connection ~ 7650 4150
 Wire Wire Line
 	9250 3850 10700 3850
 Wire Notes Line
-	1750 4550 4400 4550
+	2100 4550 4750 4550
 Wire Notes Line
-	1750 5700 4400 5700
+	2100 5700 4750 5700
 Wire Notes Line
 	11200 500  11200 5500
 Wire Wire Line
@@ -1253,7 +1255,7 @@ Connection ~ 8200 1400
 Wire Wire Line
 	7600 1400 7800 1400
 Wire Wire Line
-	7750 1850 10200 1850
+	6450 1850 10200 1850
 Connection ~ 7750 1850
 Wire Wire Line
 	7950 1000 7950 1200
@@ -1358,32 +1360,30 @@ Wire Wire Line
 Wire Wire Line
 	2800 7050 2850 7050
 Wire Wire Line
-	2800 4900 2700 4900
+	2950 4900 2850 4900
 Wire Wire Line
-	2700 4900 2700 4800
+	2850 4900 2850 4800
 Wire Wire Line
-	2700 4800 2600 4800
-Wire Wire Line
-	2300 4800 2150 4800
+	2850 4800 2750 4800
 Connection ~ 8450 2600
 Wire Wire Line
 	2800 6650 2850 6650
 Wire Wire Line
 	2800 6750 2850 6750
 Wire Wire Line
-	6400 1050 6300 1050
+	2650 3800 2550 3800
 Wire Wire Line
-	6400 1150 6300 1150
+	2650 3900 2550 3900
 Wire Wire Line
-	6400 1250 6300 1250
+	2650 4000 2550 4000
 Wire Wire Line
-	6400 1350 6300 1350
+	2650 4100 2550 4100
 Wire Wire Line
-	6900 1050 7050 1050
+	3150 3800 3300 3800
 Wire Wire Line
-	6900 1150 7050 1150
+	3150 3900 3300 3900
 Wire Wire Line
-	6900 1250 7050 1250
+	3150 4000 3300 4000
 Wire Wire Line
 	1250 6950 1200 6950
 Wire Wire Line
@@ -1622,37 +1622,35 @@ Wire Notes Line
 	500  5750 500  7750
 Wire Notes Line
 	3800 5750 3800 7750
-NoConn ~ 6900 1350
+NoConn ~ 3150 4100
 Wire Notes Line
 	11200 500  5850 500 
 Wire Notes Line
-	11200 5500 5850 5500
-Wire Notes Line
-	5850 5500 5850 500 
+	5850 500  5850 5500
 $Comp
 L CONN_02X03 J7
 U 1 1 5A757296
-P 3800 5100
-F 0 "J7" H 3800 5300 50  0000 C CNN
-F 1 "CONN_02X03" H 3800 4900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 3800 3900 50  0001 C CNN
-F 3 "" H 3800 3900 50  0001 C CNN
-	1    3800 5100
+P 4150 5100
+F 0 "J7" H 4150 5300 50  0000 C CNN
+F 1 "CONN_02X03" H 4150 4900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 4150 3900 50  0001 C CNN
+F 3 "" H 4150 3900 50  0001 C CNN
+	1    4150 5100
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	4400 5700 4400 4550
-Text Label 3550 5000 2    60   ~ 0
+	4750 5700 4750 4550
+Text Label 3900 5000 2    60   ~ 0
 D12
-Text Label 3550 5100 2    60   ~ 0
+Text Label 3900 5100 2    60   ~ 0
 D13
-Text Label 3550 5200 2    60   ~ 0
+Text Label 3900 5200 2    60   ~ 0
 uC_RST
-Text Label 4050 5000 0    60   ~ 0
+Text Label 4400 5000 0    60   ~ 0
 3.3V
-Text Label 4050 5100 0    60   ~ 0
+Text Label 4400 5100 0    60   ~ 0
 D11
-Text Label 4050 5200 0    60   ~ 0
+Text Label 4400 5200 0    60   ~ 0
 GND
 Text Label 6200 7200 2    60   ~ 0
 D6
@@ -1743,7 +1741,7 @@ Wire Notes Line
 Wire Notes Line
 	8650 800  7450 800 
 Text Notes 7450 900  0    60   ~ 0
-optional
+Ch.2 opt.\n
 Text Notes 4500 6200 0    60   ~ 0
 5V TTL
 $Comp
@@ -1766,43 +1764,43 @@ Wire Notes Line
 $Comp
 L TL3305 SW3
 U 1 1 5A7D4A33
-P 1100 5050
-F 0 "SW3" V 1100 5250 50  0000 C CNN
-F 1 "Trigger" V 1100 4900 50  0000 C CNN
-F 2 "TL3305:TL3305" H 1100 5400 50  0001 C CNN
-F 3 "" H 1100 5050 50  0000 C CNN
-F 4 "http://www.mouser.de/ProductDetail/E-Switch/TL3305AF160QG/?qs=sGAEpiMZZMsgGjVA3toVBKeJCRa1nG8XfnikbYevDuU%3d" H 1100 5050 60  0001 C CNN "Mouser"
-F 5 "0.178" H 1100 5050 60  0001 C CNN "Price"
-	1    1100 5050
+P 1400 5050
+F 0 "SW3" V 1400 5250 50  0000 C CNN
+F 1 "Trigger" V 1400 4900 50  0000 C CNN
+F 2 "TL3305:TL3305" H 1400 5400 50  0001 C CNN
+F 3 "" H 1400 5050 50  0000 C CNN
+F 4 "http://www.mouser.de/ProductDetail/E-Switch/TL3305AF160QG/?qs=sGAEpiMZZMsgGjVA3toVBKeJCRa1nG8XfnikbYevDuU%3d" H 1400 5050 60  0001 C CNN "Mouser"
+F 5 "0.178" H 1400 5050 60  0001 C CNN "Price"
+	1    1400 5050
 	0    1    1    0   
 $EndComp
 $Comp
 L R R45
 U 1 1 5A7D8B22
-P 1050 4550
-F 0 "R45" H 950 4550 50  0000 C CNN
-F 1 "330" V 1050 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 980 4550 50  0001 C CNN
-F 3 "" H 1050 4550 50  0001 C CNN
-	1    1050 4550
+P 1350 4550
+F 0 "R45" H 1250 4550 50  0000 C CNN
+F 1 "330" V 1350 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1280 4550 50  0001 C CNN
+F 3 "" H 1350 4550 50  0001 C CNN
+	1    1350 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 4750 1100 4750
+	1300 4750 1400 4750
 $Comp
 L R R46
 U 1 1 5A7D9D33
-P 1250 4350
-F 0 "R46" V 1150 4350 50  0000 C CNN
-F 1 "4.7k" V 1250 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 1180 4350 50  0001 C CNN
-F 3 "" H 1250 4350 50  0001 C CNN
-	1    1250 4350
+P 1550 4350
+F 0 "R46" V 1450 4350 50  0000 C CNN
+F 1 "4.7k" V 1550 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1480 4350 50  0001 C CNN
+F 3 "" H 1550 4350 50  0001 C CNN
+	1    1550 4350
 	0    1    1    0   
 $EndComp
-Text Label 1400 4350 0    60   ~ 0
+Text Label 1700 4350 0    60   ~ 0
 3.3V
-Text Label 1050 5550 0    60   ~ 0
+Text Label 1350 5550 0    60   ~ 0
 GND
 $Comp
 L LED D4
@@ -1827,42 +1825,40 @@ F 3 "" H 650 4550 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	1100 4350 1050 4350
+	1400 4350 1350 4350
 Wire Wire Line
-	1050 4250 1050 4400
+	1350 4250 1350 4400
 Wire Wire Line
-	1050 4700 1050 4750
-Connection ~ 1050 4750
+	1350 4700 1350 4750
+Connection ~ 1350 4750
 Wire Wire Line
-	1100 5350 1000 5350
+	1400 5350 1300 5350
 Wire Wire Line
-	1050 5550 1050 5350
-Connection ~ 1050 5350
+	1350 5550 1350 5350
+Connection ~ 1350 5350
 Text Label 650  5550 0    60   ~ 0
 GND
 Wire Wire Line
 	650  5050 650  5550
 Wire Wire Line
 	650  4700 650  4750
-Text Label 1050 4250 1    60   ~ 0
+Text Label 1350 4250 1    60   ~ 0
 A0
 Text Label 650  4250 1    60   ~ 0
 A1
-Connection ~ 1050 4350
+Connection ~ 1350 4350
 Wire Wire Line
 	650  4250 650  4400
 Wire Notes Line
-	500  4100 1700 4100
+	500  4100 2050 4100
 Wire Notes Line
-	500  5700 1700 5700
+	500  5700 2050 5700
 Wire Notes Line
 	500  5700 500  4100
 Wire Notes Line
 	500  3450 500  4050
 Wire Notes Line
 	500  4050 2050 4050
-Wire Notes Line
-	1700 5700 1700 4100
 Text Notes 550  5650 0    60   ~ 0
 Test Trigger
 Text Label 3100 1800 0    60   ~ 0
@@ -1877,7 +1873,7 @@ U 1 1 5A7B2EA9
 P 1550 3900
 F 0 "F1" V 1630 3900 50  0000 C CNN
 F 1 "Fuse" V 1475 3900 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_Reflow" V 1480 3900 50  0001 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" V 1480 3900 50  0001 C CNN
 F 3 "" H 1550 3900 50  0001 C CNN
 F 4 "https://www.mouser.de/ProductDetail/Bel-Fuse/C1Q-500?qs=sGAEpiMZZMtxU2g%2f1juGqUe1nfAlZffAyIMgrBGBGxsQDVi%2fw0PCPA%3d%3d" V 1550 3900 60  0001 C CNN "Mouser"
 F 5 "0.24" V 1550 3900 60  0001 C CNN "Price"
@@ -1894,4 +1890,95 @@ Wire Wire Line
 	1700 3900 1750 3900
 Wire Notes Line
 	2050 4050 2050 3450
+Wire Wire Line
+	1100 1050 1200 1050
+Connection ~ 1100 850 
+Wire Notes Line
+	5850 5500 11200 5500
+Wire Notes Line
+	2050 5700 2050 4100
+Wire Notes Line
+	2100 3450 2100 4500
+Wire Notes Line
+	2100 4500 3750 4500
+Wire Notes Line
+	3750 4500 3750 3450
+Wire Notes Line
+	3750 3450 2100 3450
+Text Notes 2150 4450 0    60   ~ 0
+Breakout SIG60\n
+$Comp
+L R R4
+U 1 1 5A7D1D6F
+P 6450 1550
+F 0 "R4" H 6350 1550 50  0000 C CNN
+F 1 "0" V 6450 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6380 1550 50  0001 C CNN
+F 3 "" H 6450 1550 50  0001 C CNN
+	1    6450 1550
+	1    0    0    1   
+$EndComp
+$Comp
+L Crystal_GND2 Y4
+U 1 1 5A7D2198
+P 6750 1400
+F 0 "Y4" H 6750 1600 50  0000 C CNN
+F 1 "ceramic filter" H 6750 1550 50  0000 C CNN
+F 2 "Libraries:Resonator_SMD_muRata_CTSTCR-3pin_4.5x2mm" H 6750 1400 50  0001 C CNN
+F 3 "" H 6750 1400 50  0001 C CNN
+	1    6750 1400
+	1    0    0    1   
+$EndComp
+$Comp
+L R R48
+U 1 1 5A7D2532
+P 6950 1150
+F 0 "R48" H 7050 1300 50  0000 C CNN
+F 1 "1k" V 6950 1150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6880 1150 50  0001 C CNN
+F 3 "" H 6950 1150 50  0001 C CNN
+	1    6950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 5A7D265C
+P 7150 1400
+F 0 "C14" V 7100 1250 50  0000 L CNN
+F 1 "1nF" V 7100 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7188 1250 50  0001 C CNN
+F 3 "" H 7150 1400 50  0001 C CNN
+	1    7150 1400
+	0    1    1    0   
+$EndComp
+Text Label 6750 1000 1    60   ~ 0
+GND
+Text Label 6950 1000 1    60   ~ 0
+GND
+Wire Wire Line
+	6900 1400 7000 1400
+Connection ~ 6950 1400
+Wire Wire Line
+	7300 1400 7300 1800
+Connection ~ 8750 1800
+Wire Wire Line
+	6450 1700 6450 1850
+Wire Wire Line
+	6950 1300 6950 1400
+Wire Wire Line
+	6750 1200 6750 1000
+Wire Wire Line
+	7300 1800 8750 1800
+Wire Wire Line
+	6600 1400 6450 1400
+Wire Notes Line
+	6250 1700 7400 1700
+Wire Notes Line
+	6250 1700 6250 800 
+Wire Notes Line
+	6250 800  7400 800 
+Wire Notes Line
+	7400 800  7400 1700
+Text Notes 6250 900  0    60   ~ 0
+Ch.2.1 opt.\n
 $EndSCHEMATC
