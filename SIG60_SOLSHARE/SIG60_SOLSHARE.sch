@@ -565,9 +565,9 @@ Text Label 8550 4950 3    60   ~ 0
 PLC_nReset
 NoConn ~ 7250 3550
 NoConn ~ 6450 3550
-Text Label 3100 1450 0    60   ~ 0
-XTAL2
 Text Label 3100 1350 0    60   ~ 0
+XTAL2
+Text Label 3100 1450 0    60   ~ 0
 XTAL1
 $Comp
 L Crystal_GND2 Y3
@@ -633,22 +633,18 @@ Text Label 10250 2600 0    60   ~ 0
 BO_F1B
 Text Label 10250 2400 0    60   ~ 0
 BO_F0B
-Text Label 7500 2300 2    60   ~ 0
-BO_RxP
-Text Label 2550 4100 2    60   ~ 0
+Text Label 2550 4000 2    60   ~ 0
 BO_RxP
 Text Label 3300 3800 0    60   ~ 0
 BO_DTxO
-Text Label 3300 3900 0    60   ~ 0
+Text Label 2550 3900 2    60   ~ 0
 BO_F0B
 Text Label 3300 4000 0    60   ~ 0
 BO_F1B
 Text Label 2550 3800 2    60   ~ 0
 BO_RxIn
-Text Label 2550 3900 2    60   ~ 0
+Text Label 3300 3900 0    60   ~ 0
 BO_RxN
-Text Label 2550 4000 2    60   ~ 0
-BO_TXO
 Text Label 3100 1150 0    60   ~ 0
 PLC_MF0F1
 Text Label 3100 1250 0    60   ~ 0
@@ -1058,8 +1054,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 2600 7500 2600
 Wire Wire Line
-	7500 2300 7500 3000
-Wire Wire Line
 	7950 2200 7950 2400
 Wire Wire Line
 	8100 2600 8150 2600
@@ -1309,7 +1303,6 @@ Wire Wire Line
 Wire Wire Line
 	8750 2400 10250 2400
 Connection ~ 8750 2400
-Connection ~ 7500 2600
 Wire Wire Line
 	1250 6750 1150 6750
 Wire Wire Line
@@ -1710,7 +1703,7 @@ uC_RST
 Text Label 8450 4950 3    60   ~ 0
 PLC_Wake
 Text Label 8350 4950 3    60   ~ 0
-PLC_F1nF0
+PLC_MF0F1
 Text Label 9400 4950 3    60   ~ 0
 PLC_F1nF0
 Wire Wire Line
@@ -1861,8 +1854,6 @@ Wire Notes Line
 	500  4050 2050 4050
 Text Notes 550  5650 0    60   ~ 0
 Test Trigger
-Text Label 3100 1800 0    60   ~ 0
-PLC_INH
 Text Label 8750 4950 3    60   ~ 0
 PLC_INH
 Wire Wire Line
@@ -1981,4 +1972,9 @@ Wire Notes Line
 	7400 800  7400 1700
 Text Notes 6250 900  0    60   ~ 0
 Ch.2.1 opt.\n
+Wire Wire Line
+	7500 2600 7500 3000
+Connection ~ 7500 4050
+Text Label 2550 4100 2    60   ~ 0
+BO_TXO
 $EndSCHEMATC
