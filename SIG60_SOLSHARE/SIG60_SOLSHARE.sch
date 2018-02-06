@@ -110,6 +110,8 @@ F 0 "X1" H 8850 3050 50  0000 C CNN
 F 1 "4 MHz" H 8650 2800 50  0000 C CNN
 F 2 "Crystals:Crystal_AT310_d3.0mm_l10.0mm_Horizontal" H 8850 2900 50  0001 C CNN
 F 3 "" H 8850 2900 50  0001 C CNN
+F 4 "https://www.mouser.de/ProductDetail/Epson-Timing/CA-301-40000M-CPBFREE?qs=sGAEpiMZZMsBj6bBr9Q9aUVpZ9f5Pp%252bsAJFsUQQjiHY%3d" H 8850 2900 60  0001 C CNN "Mouser"
+F 5 "1.30" H 8850 2900 60  0001 C CNN "Price"
 	1    8850 2900
 	-1   0    0    1   
 $EndComp
@@ -235,17 +237,6 @@ F 3 "" H 9250 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
-U 1 1 5A3AF771
-P 9550 4550
-F 0 "R4" H 9600 4700 50  0000 C CNN
-F 1 "100k" V 9550 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 9480 4550 50  0001 C CNN
-F 3 "" H 9550 4550 50  0001 C CNN
-	1    9550 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C1
 U 1 1 5A3B050B
 P 9850 3600
@@ -276,7 +267,6 @@ F 3 "" H 8150 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8250 4750
-NoConn ~ 8750 4750
 Text Notes 5950 600  0    60   ~ 0
 PLC_Yamar_SIG60
 Text Notes 550  3550 0    60   ~ 0
@@ -284,12 +274,12 @@ Connector_SOLBox
 $Comp
 L CONN_01X06 J3
 U 1 1 5A3D4685
-P 3000 4050
-F 0 "J3" H 3000 4400 50  0000 C CNN
-F 1 "CONN_01X06" V 3100 4050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 3000 4050 50  0001 C CNN
-F 3 "" H 3000 4050 50  0001 C CNN
-	1    3000 4050
+P 3000 5150
+F 0 "J3" H 3000 5500 50  0000 C CNN
+F 1 "CONN_01X06" V 3100 5150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 3000 5150 50  0001 C CNN
+F 3 "" H 3000 5150 50  0001 C CNN
+	1    3000 5150
 	1    0    0    -1  
 $EndComp
 Text Label 3100 2350 0    60   ~ 0
@@ -336,14 +326,14 @@ Text Label 3650 2950 0    60   ~ 0
 D6
 Text Label 3650 3050 0    60   ~ 0
 D7
-NoConn ~ 2800 4200
-Text Label 2800 3900 2    60   ~ 0
+NoConn ~ 2800 5300
+Text Label 2800 5000 2    60   ~ 0
 uC_TX
-Text Label 2800 4000 2    60   ~ 0
+Text Label 2800 5100 2    60   ~ 0
 uC_RX
-Text Label 2800 4100 2    60   ~ 0
+Text Label 2800 5200 2    60   ~ 0
 3.3V
-Text Label 2800 4300 2    60   ~ 0
+Text Label 2800 5400 2    60   ~ 0
 GND
 Text Label 650  750  2    60   ~ 0
 3.3V
@@ -426,7 +416,7 @@ Text Label 3100 2850 0    60   ~ 0
 PLC_CMD
 Text Label 3100 2650 0    60   ~ 0
 PLC_SLEEP
-Text Notes 1800 3550 0    60   ~ 0
+Text Notes 1800 4650 0    60   ~ 0
 Flashing
 Text Notes 550  600  0    60   ~ 0
 Atmega328p
@@ -434,12 +424,10 @@ Text Label 3100 2950 0    60   ~ 0
 PLC_HDI
 Text Label 3100 3050 0    60   ~ 0
 PLC_HDO
-Text Label 1350 3900 0    60   ~ 0
+Text Label 1750 3900 0    60   ~ 0
 VGRID
 Text Label 8650 4950 3    60   ~ 0
 PLC_SLEEP
-Text Label 9550 4800 3    60   ~ 0
-3.3V
 Text Label 9350 3450 1    60   ~ 0
 GND
 Text Label 7300 4950 2    60   ~ 0
@@ -901,15 +889,15 @@ $EndComp
 $Comp
 L C C6
 U 1 1 5A720714
-P 2450 3700
-F 0 "C6" V 2300 3700 50  0000 L CNN
-F 1 "0.1uF" V 2600 3550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2488 3550 50  0001 C CNN
-F 3 "" H 2450 3700 50  0001 C CNN
-	1    2450 3700
+P 2450 4800
+F 0 "C6" V 2300 4800 50  0000 L CNN
+F 1 "0.1uF" V 2600 4650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2488 4650 50  0001 C CNN
+F 3 "" H 2450 4800 50  0001 C CNN
+	1    2450 4800
 	0    1    1    0   
 $EndComp
-Text Label 2150 3700 2    60   ~ 0
+Text Label 2150 4800 2    60   ~ 0
 uC_RST
 Text Label 900  7150 2    60   ~ 0
 A0
@@ -1016,6 +1004,8 @@ F 0 "Q1" H 4450 6925 50  0000 L CNN
 F 1 "BSS138" H 4450 6850 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 4450 6775 50  0001 L CIN
 F 3 "" H 4250 6850 50  0001 L CNN
+F 4 "http://www.mouser.de/ProductDetail/Fairchild-Semiconductor/BSS138L/?qs=sGAEpiMZZMshyDBzk1%2fWi4BzQbP6tbUhQAkUBAzDZmsxS%2fazuvIVhQ%3d%3d" H 4250 6850 60  0001 C CNN "Mouser"
+F 5 "0.17" H 4250 6850 60  0001 C CNN "Price"
 	1    4250 6850
 	0    1    1    0   
 $EndComp
@@ -1107,13 +1097,7 @@ Wire Wire Line
 Wire Wire Line
 	9550 1850 9550 2800
 Wire Wire Line
-	9550 4800 9550 4700
-Wire Wire Line
 	9250 4150 9400 4150
-Connection ~ 9550 4750
-Wire Wire Line
-	9550 4400 9550 4050
-Connection ~ 9550 4050
 Wire Wire Line
 	9850 3350 9850 3450
 Wire Wire Line
@@ -1197,7 +1181,7 @@ Wire Notes Line
 Wire Notes Line
 	500  500  500  3400
 Wire Notes Line
-	1750 3450 1750 4600
+	1750 4550 1750 5700
 Wire Notes Line
 	4900 500  4900 3400
 Wire Wire Line
@@ -1231,7 +1215,6 @@ Wire Wire Line
 	10600 700  10600 650 
 Wire Wire Line
 	8550 4950 8550 4750
-Connection ~ 9250 4150
 Connection ~ 1100 2950
 Wire Wire Line
 	1000 2950 1200 2950
@@ -1253,9 +1236,9 @@ Connection ~ 7650 4150
 Wire Wire Line
 	9250 3850 10700 3850
 Wire Notes Line
-	1750 3450 4400 3450
+	1750 4550 4400 4550
 Wire Notes Line
-	1750 4600 4400 4600
+	1750 5700 4400 5700
 Wire Notes Line
 	11200 500  11200 5500
 Wire Wire Line
@@ -1375,13 +1358,13 @@ Wire Wire Line
 Wire Wire Line
 	2800 7050 2850 7050
 Wire Wire Line
-	2800 3800 2700 3800
+	2800 4900 2700 4900
 Wire Wire Line
-	2700 3800 2700 3700
+	2700 4900 2700 4800
 Wire Wire Line
-	2700 3700 2600 3700
+	2700 4800 2600 4800
 Wire Wire Line
-	2300 3700 2150 3700
+	2300 4800 2150 4800
 Connection ~ 8450 2600
 Wire Wire Line
 	2800 6650 2850 6650
@@ -1467,6 +1450,8 @@ F 0 "Q2" H 5200 6925 50  0000 L CNN
 F 1 "BSS138" H 5200 6850 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 5200 6775 50  0001 L CIN
 F 3 "" H 5000 6850 50  0001 L CNN
+F 4 "http://www.mouser.de/ProductDetail/Fairchild-Semiconductor/BSS138L/?qs=sGAEpiMZZMshyDBzk1%2fWi4BzQbP6tbUhQAkUBAzDZmsxS%2fazuvIVhQ%3d%3d" H 5000 6850 60  0001 C CNN "Mouser"
+F 5 "0.17" H 5000 6850 60  0001 C CNN "Price"
 	1    5000 6850
 	0    1    1    0   
 $EndComp
@@ -1521,6 +1506,8 @@ F 0 "Q3" H 5950 6925 50  0000 L CNN
 F 1 "BSS138" H 5950 6850 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 5950 6775 50  0001 L CIN
 F 3 "" H 5750 6850 50  0001 L CNN
+F 4 "http://www.mouser.de/ProductDetail/Fairchild-Semiconductor/BSS138L/?qs=sGAEpiMZZMshyDBzk1%2fWi4BzQbP6tbUhQAkUBAzDZmsxS%2fazuvIVhQ%3d%3d" H 5750 6850 60  0001 C CNN "Mouser"
+F 5 "0.17" H 5750 6850 60  0001 C CNN "Price"
 	1    5750 6850
 	0    1    1    0   
 $EndComp
@@ -1575,6 +1562,8 @@ F 0 "Q4" H 6650 6925 50  0000 L CNN
 F 1 "BSS138" H 6650 6850 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 6650 6775 50  0001 L CIN
 F 3 "" H 6450 6850 50  0001 L CNN
+F 4 "http://www.mouser.de/ProductDetail/Fairchild-Semiconductor/BSS138L/?qs=sGAEpiMZZMshyDBzk1%2fWi4BzQbP6tbUhQAkUBAzDZmsxS%2fazuvIVhQ%3d%3d" H 6450 6850 60  0001 C CNN "Mouser"
+F 5 "0.17" H 6450 6850 60  0001 C CNN "Price"
 	1    6450 6850
 	0    1    1    0   
 $EndComp
@@ -1643,27 +1632,27 @@ Wire Notes Line
 $Comp
 L CONN_02X03 J7
 U 1 1 5A757296
-P 3800 4000
-F 0 "J7" H 3800 4200 50  0000 C CNN
-F 1 "CONN_02X03" H 3800 3800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 3800 2800 50  0001 C CNN
-F 3 "" H 3800 2800 50  0001 C CNN
-	1    3800 4000
+P 3800 5100
+F 0 "J7" H 3800 5300 50  0000 C CNN
+F 1 "CONN_02X03" H 3800 4900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 3800 3900 50  0001 C CNN
+F 3 "" H 3800 3900 50  0001 C CNN
+	1    3800 5100
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	4400 4600 4400 3450
-Text Label 3550 3900 2    60   ~ 0
+	4400 5700 4400 4550
+Text Label 3550 5000 2    60   ~ 0
 D12
-Text Label 3550 4000 2    60   ~ 0
+Text Label 3550 5100 2    60   ~ 0
 D13
-Text Label 3550 4100 2    60   ~ 0
+Text Label 3550 5200 2    60   ~ 0
 uC_RST
-Text Label 4050 3900 0    60   ~ 0
+Text Label 4050 5000 0    60   ~ 0
 3.3V
-Text Label 4050 4000 0    60   ~ 0
+Text Label 4050 5100 0    60   ~ 0
 D11
-Text Label 4050 4100 0    60   ~ 0
+Text Label 4050 5200 0    60   ~ 0
 GND
 Text Label 6200 7200 2    60   ~ 0
 D6
@@ -1700,23 +1689,23 @@ Connection ~ 6700 6950
 Wire Notes Line
 	6900 6100 3850 6100
 $Comp
-L CONN_02X03 J?
+L CONN_02X03 J2
 U 1 1 5A7AA4BB
 P 1100 3800
-F 0 "J?" H 1100 4000 50  0000 C CNN
+F 0 "J2" H 1100 4000 50  0000 C CNN
 F 1 "CONN_02X03" H 1100 3600 50  0000 C CNN
-F 2 "" H 1100 2600 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 1100 2600 50  0001 C CNN
 F 3 "" H 1100 2600 50  0001 C CNN
 	1    1100 3800
 	1    0    0    -1  
 $EndComp
-Text Label 1350 3800 0    60   ~ 0
+Text Label 1750 3800 0    60   ~ 0
 GND
 Text Label 850  3800 2    60   ~ 0
 uC_RX
 Text Label 850  3900 2    60   ~ 0
 uC_TX
-Text Label 1350 3700 0    60   ~ 0
+Text Label 1750 3700 0    60   ~ 0
 3.3V
 Text Label 850  3700 2    60   ~ 0
 uC_RST
@@ -1731,10 +1720,10 @@ Wire Wire Line
 Wire Wire Line
 	9400 4150 9400 4950
 $Comp
-L R R?
+L R R47
 U 1 1 5A7C9D02
 P 7600 1550
-F 0 "R?" H 7500 1550 50  0000 C CNN
+F 0 "R47" H 7500 1550 50  0000 C CNN
 F 1 "0" V 7600 1550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 7530 1550 50  0001 C CNN
 F 3 "" H 7600 1550 50  0001 C CNN
@@ -1758,12 +1747,12 @@ optional
 Text Notes 4500 6200 0    60   ~ 0
 5V TTL
 $Comp
-L CONN_01X02 J?
+L CONN_01X02 J1
 U 1 1 5A7CF4E9
 P 800 2150
-F 0 "J?" H 800 2300 50  0000 C CNN
+F 0 "J1" H 800 2300 50  0000 C CNN
 F 1 "CONN_01X02" V 900 2150 50  0000 C CNN
-F 2 "" H 800 2150 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 800 2150 50  0001 C CNN
 F 3 "" H 800 2150 50  0001 C CNN
 	1    800  2150
 	-1   0    0    1   
@@ -1773,12 +1762,12 @@ Wire Wire Line
 Wire Wire Line
 	1200 2200 1000 2200
 Wire Notes Line
-	500  3450 1700 3450
+	500  3450 2050 3450
 $Comp
-L TL3305 SW?
+L TL3305 SW3
 U 1 1 5A7D4A33
 P 1100 5050
-F 0 "SW?" V 1100 5250 50  0000 C CNN
+F 0 "SW3" V 1100 5250 50  0000 C CNN
 F 1 "Trigger" V 1100 4900 50  0000 C CNN
 F 2 "TL3305:TL3305" H 1100 5400 50  0001 C CNN
 F 3 "" H 1100 5050 50  0000 C CNN
@@ -1788,10 +1777,10 @@ F 5 "0.178" H 1100 5050 60  0001 C CNN "Price"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R?
+L R R45
 U 1 1 5A7D8B22
 P 1050 4550
-F 0 "R?" H 950 4550 50  0000 C CNN
+F 0 "R45" H 950 4550 50  0000 C CNN
 F 1 "330" V 1050 4550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 980 4550 50  0001 C CNN
 F 3 "" H 1050 4550 50  0001 C CNN
@@ -1801,10 +1790,10 @@ $EndComp
 Wire Wire Line
 	1000 4750 1100 4750
 $Comp
-L R R?
+L R R46
 U 1 1 5A7D9D33
 P 1250 4350
-F 0 "R?" V 1150 4350 50  0000 C CNN
+F 0 "R46" V 1150 4350 50  0000 C CNN
 F 1 "4.7k" V 1250 4350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 1180 4350 50  0001 C CNN
 F 3 "" H 1250 4350 50  0001 C CNN
@@ -1816,10 +1805,10 @@ Text Label 1400 4350 0    60   ~ 0
 Text Label 1050 5550 0    60   ~ 0
 GND
 $Comp
-L LED D?
+L LED D4
 U 1 1 5A7DA5A7
 P 650 4900
-F 0 "D?" H 650 5000 50  0000 C CNN
+F 0 "D4" H 650 5000 50  0000 C CNN
 F 1 "Feedback" H 650 4800 50  0000 C CNN
 F 2 "LEDs:LED_1206_HandSoldering" H 650 4900 50  0001 C CNN
 F 3 "" H 650 4900 50  0001 C CNN
@@ -1827,10 +1816,10 @@ F 3 "" H 650 4900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R?
+L R R5
 U 1 1 5A7DB3C4
 P 650 4550
-F 0 "R?" H 730 4550 50  0000 C CNN
+F 0 "R5" H 730 4550 50  0000 C CNN
 F 1 "1k" V 650 4550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 580 4550 50  0001 C CNN
 F 3 "" H 650 4550 50  0001 C CNN
@@ -1871,11 +1860,38 @@ Wire Notes Line
 Wire Notes Line
 	500  3450 500  4050
 Wire Notes Line
-	500  4050 1700 4050
-Wire Notes Line
-	1700 4050 1700 3450
+	500  4050 2050 4050
 Wire Notes Line
 	1700 5700 1700 4100
 Text Notes 550  5650 0    60   ~ 0
 Test Trigger
+Text Label 3100 1800 0    60   ~ 0
+PLC_INH
+Text Label 8750 4950 3    60   ~ 0
+PLC_INH
+Wire Wire Line
+	8750 4750 8750 4950
+$Comp
+L Fuse F1
+U 1 1 5A7B2EA9
+P 1550 3900
+F 0 "F1" V 1630 3900 50  0000 C CNN
+F 1 "Fuse" V 1475 3900 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_Reflow" V 1480 3900 50  0001 C CNN
+F 3 "" H 1550 3900 50  0001 C CNN
+F 4 "https://www.mouser.de/ProductDetail/Bel-Fuse/C1Q-500?qs=sGAEpiMZZMtxU2g%2f1juGqUe1nfAlZffAyIMgrBGBGxsQDVi%2fw0PCPA%3d%3d" V 1550 3900 60  0001 C CNN "Mouser"
+F 5 "0.24" V 1550 3900 60  0001 C CNN "Price"
+	1    1550 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 3700 1750 3700
+Wire Wire Line
+	1350 3800 1750 3800
+Wire Wire Line
+	1350 3900 1400 3900
+Wire Wire Line
+	1700 3900 1750 3900
+Wire Notes Line
+	2050 4050 2050 3450
 $EndSCHEMATC
