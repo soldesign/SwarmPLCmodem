@@ -635,15 +635,15 @@ Text Label 10250 2400 0    60   ~ 0
 BO_F0B
 Text Label 2550 4000 2    60   ~ 0
 BO_RxP
-Text Label 3300 3800 0    60   ~ 0
-BO_DTxO
-Text Label 2550 3900 2    60   ~ 0
-BO_F0B
 Text Label 3300 4000 0    60   ~ 0
-BO_F1B
+BO_DTxO
 Text Label 2550 3800 2    60   ~ 0
+BO_F0B
+Text Label 2550 3900 2    60   ~ 0
+BO_F1B
+Text Label 3300 3800 0    60   ~ 0
 BO_RxIn
-Text Label 3300 3900 0    60   ~ 0
+Text Label 3300 4100 0    60   ~ 0
 BO_RxN
 Text Label 3100 1150 0    60   ~ 0
 PLC_MF0F1
@@ -1370,8 +1370,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 4000 2550 4000
 Wire Wire Line
-	2650 4100 2550 4100
-Wire Wire Line
 	3150 3800 3300 3800
 Wire Wire Line
 	3150 3900 3300 3900
@@ -1615,7 +1613,7 @@ Wire Notes Line
 	500  5750 500  7750
 Wire Notes Line
 	3800 5750 3800 7750
-NoConn ~ 3150 4100
+NoConn ~ 2650 4100
 Wire Notes Line
 	11200 500  5850 500 
 Wire Notes Line
@@ -1975,6 +1973,8 @@ Ch.2.1 opt.\n
 Wire Wire Line
 	7500 2600 7500 3000
 Connection ~ 7500 4050
-Text Label 2550 4100 2    60   ~ 0
+Text Label 3300 3900 0    60   ~ 0
 BO_TXO
+Wire Wire Line
+	3150 4100 3300 4100
 $EndSCHEMATC
