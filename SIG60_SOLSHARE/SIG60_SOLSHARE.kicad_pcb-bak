@@ -2,7 +2,7 @@
 
   (general
     (links 203)
-    (no_connects 9)
+    (no_connects 0)
     (area 166.294999 18.466999 235.533001 72.465001)
     (thickness 1.6)
     (drawings 34)
@@ -310,10 +310,10 @@
     )
   )
 
-  (module "Arduinos:ARDUINO SHIELD" locked (layer F.Cu) (tedit 589C3CB6) (tstamp 5A7A25D4)
+  (module "Arduinos:ARDUINO SHIELD" locked (layer F.Cu) (tedit 5A7B11BA) (tstamp 5A7A25D4)
     (at 235.15 18.76 180)
     (path /5A70AF30)
-    (fp_text reference AU1 (at 1.75 -51.5 180) (layer F.SilkS)
+    (fp_text reference AU1 (at 1.75 -51.5 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_text value ArduinoUno (at 3.15 -54.65 180) (layer F.SilkS) hide
@@ -3678,7 +3678,7 @@
     )
   )
 
-  (gr_text "3.3V PLC Modem v1.1\nJannis Reissig\nME SolDesign/HTW\n" (at 191.3763 33.0708) (layer F.SilkS)
+  (gr_text "3.3V PLC Modem v1.1\nJannis Reissig\nME SolDesign/HTW\n" (at 186.94 32.37) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "Ch. 2.1\n(opt.)" (at 222.9202 54.6476) (layer F.SilkS)
@@ -3709,8 +3709,8 @@
   (gr_text FTDI (at 167.259 40.4622 270) (layer F.SilkS)
     (effects (font (size 0.508 0.635) (thickness 0.127)))
   )
-  (gr_text "Sanchaar\nKarana\n" (at 191.516 53.34) (layer F.SilkS)
-    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  (gr_text "Sanchaar\nKarana\n" (at 192.42 53.75) (layer F.SilkS)
+    (effects (font (size 2.2 2.2) (thickness 0.3)))
   )
   (gr_text "Ch. 1" (at 223.0316 37.4974) (layer F.SilkS)
     (effects (font (size 0.762 0.762) (thickness 0.1016)))
