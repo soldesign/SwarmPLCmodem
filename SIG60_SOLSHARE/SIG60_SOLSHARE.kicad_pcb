@@ -2,11 +2,11 @@
 
   (general
     (links 203)
-    (no_connects 13)
+    (no_connects 0)
     (area 166.294999 18.466999 235.533001 72.465001)
     (thickness 1.6)
     (drawings 34)
-    (tracks 1233)
+    (tracks 1251)
     (zones 0)
     (modules 87)
     (nets 87)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 0.4)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
     (zone_45_only no)
@@ -63,7 +63,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFEFEFF)
+    (visible_elements 7FFEEEFF)
     (pcbplotparams
       (layerselection 0x010f0_80000001)
       (usegerberextensions false)
@@ -181,7 +181,7 @@
 
   (net_class Default "Dies ist die voreingestellte Netzklasse."
     (clearance 0.2)
-    (trace_width 0.25)
+    (trace_width 0.4)
     (via_dia 0.6)
     (via_drill 0.4)
     (uvia_dia 0.3)
@@ -274,7 +274,7 @@
     (add_net "Net-(U1-Pad9)")
   )
 
-  (module "Arduinos:ARDUINO SHIELD" (layer F.Cu) (tedit 589C3CB6) (tstamp 5A7A25D4)
+  (module "Arduinos:ARDUINO SHIELD" locked (layer F.Cu) (tedit 589C3CB6) (tstamp 5A7A25D4)
     (at 235.15 18.76 180)
     (path /5A70AF30)
     (fp_text reference AU1 (at 1.75 -51.5 180) (layer F.SilkS)
@@ -3672,9 +3672,9 @@
     (pad 8 thru_hole oval (at 2.54 7.62) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 73 "Net-(J5-Pad8)"))
     (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_2x04_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
+      (at (xyz 0.05 -0.15 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -3731,6 +3731,24 @@
     (effects (font (size 0.508 0.635) (thickness 0.127)))
   )
 
+  (segment (start 170.073132 52.040868) (end 167.365 49.332736) (width 0.4) (layer B.Cu) (net 1))
+  (segment (start 167.365 49.332736) (end 167.365 48.58) (width 0.4) (layer B.Cu) (net 1))
+  (segment (start 170.465382 52.17) (end 170.44 52.17) (width 0.4) (layer B.Cu) (net 1))
+  (segment (start 170.44 52.17) (end 170.310868 52.040868) (width 0.4) (layer B.Cu) (net 1))
+  (segment (start 170.310868 52.040868) (end 170.073132 52.040868) (width 0.4) (layer B.Cu) (net 1))
+  (segment (start 171.478501 53.183119) (end 170.465382 52.17) (width 0.4) (layer B.Cu) (net 1))
+  (segment (start 170.11 57.85) (end 171.478501 56.481499) (width 0.4) (layer B.Cu) (net 1))
+  (segment (start 171.478501 56.481499) (end 171.478501 53.183119) (width 0.4) (layer B.Cu) (net 1))
+  (via (at 170.11 57.85) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 1))
+  (segment (start 170.11 70.17133) (end 170.11 57.85) (width 0.4) (layer F.Cu) (net 1))
+  (segment (start 208.734 69.56) (end 208.734 70.068) (width 0.4) (layer F.Cu) (net 1))
+  (segment (start 208.734 70.068) (end 207.57199 71.23001) (width 0.4) (layer F.Cu) (net 1))
+  (segment (start 207.57199 71.23001) (end 197.69001 71.23001) (width 0.4) (layer F.Cu) (net 1))
+  (segment (start 197.69001 71.23001) (end 197.16 70.7) (width 0.4) (layer F.Cu) (net 1))
+  (segment (start 197.16 70.7) (end 197.04533 70.7) (width 0.4) (layer F.Cu) (net 1))
+  (segment (start 197.04533 70.7) (end 196.51532 71.23001) (width 0.4) (layer F.Cu) (net 1))
+  (segment (start 196.51532 71.23001) (end 171.16868 71.23001) (width 0.4) (layer F.Cu) (net 1))
+  (segment (start 171.16868 71.23001) (end 170.11 70.17133) (width 0.4) (layer F.Cu) (net 1))
   (segment (start 203.255 38.36) (end 206.675002 38.36) (width 0.4) (layer B.Cu) (net 1))
   (segment (start 207.985001 37.050001) (end 208.096001 37.050001) (width 0.4) (layer B.Cu) (net 1))
   (segment (start 206.675002 38.36) (end 207.985001 37.050001) (width 0.4) (layer B.Cu) (net 1))

@@ -2,7 +2,7 @@
 
   (general
     (links 203)
-    (no_connects 13)
+    (no_connects 0)
     (area 166.294999 18.466999 235.533001 72.465001)
     (thickness 1.6)
     (drawings 34)
@@ -63,7 +63,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFEFEFF)
+    (visible_elements 7FFEEEFF)
     (pcbplotparams
       (layerselection 0x010f0_80000001)
       (usegerberextensions false)
@@ -274,7 +274,7 @@
     (add_net "Net-(U1-Pad9)")
   )
 
-  (module "Arduinos:ARDUINO SHIELD" (layer F.Cu) (tedit 589C3CB6) (tstamp 5A7A25D4)
+  (module "Arduinos:ARDUINO SHIELD" locked (layer F.Cu) (tedit 589C3CB6) (tstamp 5A7A25D4)
     (at 235.15 18.76 180)
     (path /5A70AF30)
     (fp_text reference AU1 (at 1.75 -51.5 180) (layer F.SilkS)
@@ -3672,9 +3672,9 @@
     (pad 8 thru_hole oval (at 2.54 7.62) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 73 "Net-(J5-Pad8)"))
     (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_2x04_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
+      (at (xyz 0.05 -0.15 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -3700,7 +3700,7 @@
   (gr_line (start 228.05 53.39) (end 228.05 57.69) (angle 90) (layer F.SilkS) (width 0.2))
   (gr_line (start 215.33 53.42) (end 215.33 57.61) (angle 90) (layer F.SilkS) (width 0.2))
   (gr_line (start 215.22 36.6) (end 227.95 36.6) (angle 90) (layer F.SilkS) (width 0.2))
-  (gr_text Breakout (at 207.17 49 90) (layer F.SilkS)
+  (gr_text Breakout (at 208.14 49.04 90) (layer F.SilkS)
     (effects (font (size 0.508 0.635) (thickness 0.127)))
   )
   (gr_text SOLBOX (at 234.78 32.54 90) (layer F.SilkS)
